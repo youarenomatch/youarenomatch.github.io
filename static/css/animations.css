@@ -1,0 +1,111 @@
+@keyframes style3 {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes style4 {
+    from, 20%, 40%, 60%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        transform: scale3d(.9, .9, .9);
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        transform: scale3d(.97, .97, .97);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.is-animate4.style4 > span {
+    animation-name: style4;
+}
+
+.is-animate4 > span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.is-animate4 > span:nth-child(1) {
+    animation-delay: 0.0s
+}
+
+.is-animate4 > span:nth-child(2) {
+    animation-delay: 0.1s
+}
+
+.is-animate4 > span:nth-child(3) {
+    animation-delay: 0.2s
+}
+
+.is-animate4 > span:nth-child(4) {
+    animation-delay: 0.3s
+}
+
+.is-animate3.style3 > span {
+    animation-name: style3;
+    background-color: #3f51b5;
+    margin: 1px;
+    color: #fff;
+    padding: 6px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 9px -3px #000;
+    display: inline-block;
+}
+
+.is-animate3 > span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.is-animate3 > span:nth-child(1) {
+    animation-delay: 0.0s
+}
+
+.is-animate3 > span:nth-child(2) {
+    animation-delay: 0.1s
+}
+
+.is-animate3 > span:nth-child(3) {
+    animation-delay: 0.2s
+}
+
+/*.is-animate3 > span:nth-child(4) {*/
+    /*animation-delay: 0.3s*/
+/*}*/
+
+/*.is-animate3 > span:nth-child(5) {*/
+    /*animation-delay: 0.4s*/
+/*}*/
+
+/*.is-animate3 > span:nth-child(6) {*/
+    /*animation-delay: 0.5s*/
+/*}*/
